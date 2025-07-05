@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
+import Image from "next/image";
+import Header from "@/components/layouts/header";
+import { Footer } from "@/components/layouts/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +31,39 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="container max-w-3xl mx-auto min-h-screen flex flex-col px-4 py-5">
+            <div className="flex-1">
+              <Header />
+              {children}
+            </div>
+            <Footer />
+            <Image
+              width={500}
+              height={500}
+              className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 lg:scale-100 object-cover w-full"
+              src={"/assets/gradient.webp"}
+              role="presenation"
+              alt="Gradient background"
+              priority
+            />
+          </div>
+        </ThemeProvider>
+        <link
+          href="/favicons/favicon-light.ico"
+          rel="icon"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          href="/favicons/favicon-dark.ico"
+          rel="icon"
+          media="(prefers-color-scheme: dark)"
+        />
       </body>
     </html>
   );
