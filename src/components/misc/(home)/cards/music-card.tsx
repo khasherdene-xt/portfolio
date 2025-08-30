@@ -8,14 +8,14 @@ export const MusicCard = () => {
     title: "Birds of a Feather",
     duration: "3:30",
     year: 2024,
-    imageUrl: "/assets/music.jpeg", // Replace with actual image path
+    imageUrl: "/assets/music.jpeg",
   };
 
   return (
     <Link
       href="https://www.youtube.com/watch?v=V9PVRfjEBTI&t=7s"
       target="_blank"
-      className="dark:bg-neutral-900 bg-gray-200  relative h-full w-full group flex flex-col justify-between overflow-hidden rounded-2xl transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95"
+      className="dark:bg-neutral-900 bg-gray-100  relative h-full w-full group flex flex-col justify-between overflow-hidden rounded-2xl transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95"
     >
       <div className="p-4 flex gap-4">
         {/* Album Art */}

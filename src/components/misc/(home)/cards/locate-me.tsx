@@ -8,7 +8,7 @@ export const LocateMe = () => {
       target="_blank"
       className="w-full h-36 hover:scale-95 transform duration-500 transition-all rounded-xl bg-gradient-to-r p-1 cursor-pointer group"
     >
-      <div className="relative overflow-hidden flex flex-col justify-between h-full rounded-lg bg-white dark:bg-zinc-900">
+      <div className="relative overflow-hidden flex flex-col justify-between h-full rounded-lg bg-gray-100 dark:bg-zinc-900">
         {/* Header */}
         <div className="flex flex-col justify-between">
           <div className="px-4 py-2">
