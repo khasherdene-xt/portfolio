@@ -7,20 +7,20 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          hi, i am Khash-Erdene Growing up in Ulaanbaatar, Mongolia, I developed
-          a deep passion for software engineering, mobile, and web development.
-          My coding journey began in 2021, and since then, it has been an
-          exhilarating adventure transforming ideas into functional, innovative
+          Hi, I’m Khash-Erdene. Growing up in Ulaanbaatar, Mongolia, I
+          discovered a deep passion for software engineering, mobile, and web
+          development. My coding journey began in 2021, and since then, it has
+          been an exciting adventure, turning ideas into functional, innovative
           solutions.
         </p>
         <p>
           As a software engineer and versatile developer, I thrive in the
-          ever-evolving tech landscape, constantly exploring new tools,
-          languages, and frameworks to stay ahead.
+          fast-paced world of technology. I love exploring new tools, languages,
+          and frameworks, constantly learning and adapting to stay ahead.
         </p>
         <p>
-          For me, coding is more than just a profession, it is a lifelong
-          pursuit of mastery, innovation, and shaping the future of technology.
+          For me, coding is more than just a career, it’s a lifelong pursuit of
+          mastery, creativity, and building the future of technology.
         </p>
       </div>
       <svg

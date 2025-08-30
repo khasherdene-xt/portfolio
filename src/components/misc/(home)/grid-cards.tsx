@@ -16,7 +16,7 @@ export const GridCards = () => {
         <div className="col-span-3">
           <GHLink />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 md:ml-2">
           <MusicCard />
         </div>
       </div>
@@ -38,7 +38,7 @@ export const GridCards = () => {
           </div>
         </div>
 
-        <div className="col-span-3 md:ml-3">
+        <div className="col-span-3 md:ml-2">
           <div className="flex gap-3 ">
             <LocateMe />
           </div>

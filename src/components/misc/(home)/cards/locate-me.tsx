@@ -6,9 +6,9 @@ export const LocateMe = () => {
     <Link
       href={"https://www.google.com/maps/place/Mongolia/"}
       target="_blank"
-      className="bg-gray-300 dark:bg-background w-full h-36 hover:scale-95 transform duration-500 transition-all rounded-xl bg-gradient-to-r p-1 cursor-pointer group"
+      className="w-full h-36 hover:scale-95 transform duration-500 transition-all rounded-xl bg-gradient-to-r p-1 cursor-pointer group"
     >
-      <div className="relative overflow-hidden flex flex-col justify-between h-full rounded-lg bg-white dark:bg-gray-900">
+      <div className="relative overflow-hidden flex flex-col justify-between h-full rounded-lg bg-white dark:bg-zinc-900">
         {/* Header */}
         <div className="flex flex-col justify-between">
           <div className="px-4 py-2">
@@ -40,11 +40,6 @@ export const LocateMe = () => {
               <span className="text-blue-500">Open Maps →</span>
             </div>
           </div>
-        </div>
-
-        {/* Decorative Map Pattern */}
-        <div className="absolute top-0 right-0 w-20 h-20 opacity-10 dark:opacity-20 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-br from-blue-400 to-green-400 rounded-bl-full"></div>
         </div>
       </div>
     </Link>
