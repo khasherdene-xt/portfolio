@@ -2,6 +2,7 @@ import { Emoji } from "@/components/misc/emoji";
 import { clsx } from "clsx";
 import type { ComponentProps } from "react";
 import { GithubIcon } from "../icons";
+import { personalInfo } from "@/lib/config";
 
 export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
   const year = String(new Date().getFullYear());
@@ -26,7 +27,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
         </span>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/vimfn/www"
+          href={personalInfo.github}
           rel="noreferrer"
           target="_blank"
         >
